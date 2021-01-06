@@ -1,0 +1,24 @@
+$primary-color: red;
+$secondary-color: green;
+$third-color: blue;
+
+
+%first{
+    background-color: $primary-color;
+    padding: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.second{
+    @extend %first;
+    background-color: $secondary-color;
+    margin-top: 10px;
+
+}
+
+.third{
+    background-color: $third-color;
+    @extend %first;
+    margin-top: 10px;
+}
